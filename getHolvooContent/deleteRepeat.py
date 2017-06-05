@@ -10,9 +10,9 @@ def deleteRepat(fileName):
             print(len(data))
 
             if len(data)>= len(str) - 5:
-                with open('holvoo_urls01_filtered.txt', 'a') as f:
+                with open('holvoo_urls02_filtered.txt', 'a') as f:
                     f.write(data)
             data = file.readline()
 
 # deleteRepat('songTitles')
-deleteRepat('holvoo_urls01')
+deleteRepat('holvoo_urls02')

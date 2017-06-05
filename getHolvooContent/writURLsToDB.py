@@ -11,7 +11,7 @@ spider_queue = MongoQueue('mongolia', 'holvoo_urls')
 
 spider_queue.clear()
 
-with open('holvoo_urls01_filtered.txt') as f:
+with open('holvoo_urls02_filtered.txt') as f:
     url = f.readline()
     while url:
         try:

@@ -33,7 +33,7 @@ def infoCrawler():
             #     #区分没有抓到数据以及本身没有数据 有重置 死循环？ 谨慎重置 不然就是死循环 永远抓不完 如果有isotime 则complete
             #     spider_queue.reset(url)
             # else:
-            #     spider_queue.complete(url)
+            spider_queue.complete(url)
 
 def getData(url):
     try:
@@ -89,7 +89,7 @@ def getData(url):
         print(result)
 
         if len(time) > 0:  # there exist data  <p></p>
-            with open('holvoo_data.txt', 'a') as file:
+            with open('holvoo_data02.txt', 'a') as file:
                 file.write(result + '\n')
 
     except Exception as e:
